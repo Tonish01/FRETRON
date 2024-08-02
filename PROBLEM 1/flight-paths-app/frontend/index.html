@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Paths Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Flight Paths Visualization</h1>
+    <canvas id="flightCanvas" width="500" height="500"></canvas>
+    
+    <h2>Add New Flight</h2>
+    <form id="flightForm">
+        <label for="name">Flight Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" required>
+        
+        <label for="path">Path (comma-separated coordinates, e.g., "1,1 2,2 3,3"):</label>
+        <input type="text" id="path" name="path" required>
+        
+        <button type="submit">Add Flight</button>
+    </form>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
